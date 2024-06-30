@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Timesheet</title>
+  </head>
+  <body>
+    <h1>Timesheet for {{ clocking_number }}</h1>
+    <!-- This example assumes the first page is the user's timesheet. You may need to adjust this. -->
+    <embed src="{{ url_for('static', filename='output_pages/page_1.pdf') }}" width="600" height="500" type="application/pdf">
+  </body>
+</html>
